@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     {% load staticfiles %}
+     <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/ok.js' %}"></script>
+</head>
+<body>
+    <div id="nav">
+         <div class="dropdown">
+            <button class="button"><img src="{% static 'images/menu.png'%}"></button>
+            <div class="dropdown-content">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+            </div>
+            <button class="button"><a href="/home1"><img src="{% static 'images/back.png'%}"></a></button> 
+        </div>
+        <img src="{% static 'images/farb.jpg' %}" width="300" height="120">
+
+     
+
+    </div>
+    <div id="wrapper">
+        <br>
+
+        <div id="wrapper2">
+            <h1>My Portfolio</h1>
+            <p>I have worked in Digital Marketing for 3 years. I have a degree in Communications.
+            I am currently am building my skills as a computer programmer.</p>
+            <div id="one">
+
+                <div id="art">
+                    <div class="slideshow-container">
+                        <h2>Digital Art</h2>
+                        <div class="mySlides fade">
+                            <img src="{% static 'images/self.jpg' %}" style="width:500px" style="height:500px">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                            <img src="{% static 'images/eye.jpg' %}" style="width:500px" style="height:500px">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                            <img src="{% static 'images/ok.jpg' %}" style="width:500px" style="height:500px">
+                        </div> 
+                        <br>
+                        <a href="https://www.instagram.com/farbiedoll/"> See More Artwork.</a>
+                    </div>      
+                </div>
+                <div id="web">
+                    <h2>Web designs</h2>
+                    <img src="{% static 'images/1.jpg' %}" width="500" height="380">
+                    <br>
+                    <br>
+                    <a href="#"> View all.</a>
+                    <br>
+                    <h2>Digital Marketing</h2>
+                    <img src="{% static 'images/spa.jpg' %}" width="500" height="500">
+                    <br>
+                    <br>
+                    <a href="#">Learn More</a>
+                    <br>
+                    <br>
+                    <h2>Copywritting</h2>
+                    <a href="http://www.alecanmarketing.com/fix-facebook-ads-using-4-simple-metrics/"><img src="{% static 'images/hm.jpg' %}" width="500" height="380"></a>
+                    <br>
+                    <a href="http://www.alecanmarketing.com/fix-facebook-ads-using-4-simple-metrics/">Read Full Article.</a>
+                    <br>
+
+
+                    
+
+                    
+
+
+                </div>
+
+            </div>
+
+                
+                <br>
+                
+                <!-- The dots/circles -->
+         
+
+                <div id="two">
+                    
+                </div>
+                
+                
+                </div>
+            </div>
+
+        </div>
+        
+
+
+
+    </div>
+    
+    
+</body>
+</html>

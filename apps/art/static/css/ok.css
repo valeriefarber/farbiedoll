@@ -1,0 +1,131 @@
+
+
+#wrapper {
+    margin: 0 auto;
+    text-align: center;
+     background-image: linear-gradient(rgb(248, 182, 184), rgb(252, 215, 213), rgb(248, 182, 184));
+    height: 7000px;
+    font-family: "Courier New";
+}
+
+#greeting {
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+#nav {
+    padding: 20px;
+    font-size: 20px;
+     background-image: linear-gradient(rgb(248, 182, 184), rgb(252, 215, 213), rgb(248, 182, 184));
+}
+
+#nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: black;
+    padding: 15px 50px;
+    display: inline;
+    text-decoration-style: none;
+    text-decoration-color: black;
+    font-size: 25px;
+    font-weight: 800px;
+    text-anchor: none;
+    
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 15px;
+    border: 1px solid black;
+
+}
+
+#box {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 20px;
+
+
+}
+
+table {
+
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+#favorites {
+    order: 1;
+    
+
+}
+
+#other {
+    order: 2;
+}
+
+.button {
+    width: 240spx;
+    background-image: linear-gradient(rgb(117, 19, 42), rgb(166, 77, 74), rgb(82, 21, 23));
+    font-family: 'Courier New';
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid black;
+}
+
+button {
+
+    background-image: linear-gradient(rgb(117, 19, 42), rgb(166, 77, 74), rgb(82, 21, 23));
+    font-family: 'Courier New';
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid black;
+   
+
+
+}
+
+button a {
+    text-decoration-color: white;
+    text-decoration-line: none;
+    text-decoration: none;
+    color: white;
+}
+
+#add {
+    background-color: lightcoral;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#intro {
+    background-color: lightcoral;
+    margin-top: -65px;
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#intro img {
+    border: 2px dashed black;
+}
+
+.text {
+    padding: 30px;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 800px;
+    font-size: 30px;
+}
+
+

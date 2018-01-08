@@ -1,0 +1,147 @@
+
+#nav {
+    margin: 0 auto; 
+    padding: 30px;
+    background-color: black;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-decoration-color: white;
+    text-decoration-style: none;
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-flow: row;
+    height: 100px;
+    justify-content: space-between;
+    font-family: "Courier New";
+
+}
+
+#nav a {
+
+    text-decoration-color: white;
+    list-style: none;
+    color: white;
+    padding: 20px;
+
+}
+
+
+#nav ul {
+    list-style-type: none;
+    font-size: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    order: 1;
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    min-width: 160px;
+    padding: 60px 60px;
+    border-radius: 10px;
+    text-decoration-style: none;
+    z-index: 1;
+    font-family: "Courier New";
+    line-height: 50px;
+
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#wrapper {
+    margin: 0 auto;
+    text-align: center;
+     background-image: url("https://farm5.staticflickr.com/4466/38019601422_42a28fbd32.jpg");
+    margin-top: -20px;
+    height: 7000px;
+    width: 70%;
+    color: black;
+    font-family: "Courier New";
+}
+
+body { 
+    width: 100%;
+    background-image: linear-gradient(rgb(117, 19, 42), rgb(166, 77, 74), rgb(82, 21, 23));
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    color: white;
+}
+
+
+button {
+
+    background-image: linear-gradient(rgb(117, 19, 42), rgb(166, 77, 74), rgb(82, 21, 23));
+    font-family: 'Courier New';
+    padding: 15px 15px;
+    border-radius: 10px;
+    color: white;
+
+    border: 1px solid black;
+   
+}
+
+
+#wrapper2 {
+
+    background-color: black;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+
+
+
+}
+
+h1 {
+    font-size: 65px;
+    color:  rgb(144, 35, 35);
+    opacity: .8;
+    letter-spacing: 6px;
+    padding: 30px 70px;
+}
+
+
+h2 {
+
+    color:  rgb(144, 35, 35);
+    opacity: .8;
+    letter-spacing: 6px;
+    padding: 30px 70px;
+    font-size: 30px;
+
+}
+
+#wrapper2 a, #wrapper2 p  {
+    color: white;
+    letter-spacing: 6px;
+    padding: 30px 70px;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+
+}
+#one {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+
+#art {
+    order: 1;
+
+}
+
+#web {
+    order: 2;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/ok.css' %}">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="nav">
+            <center>
+                <p>
+                    <a href=/logout>Logout</a> |
+                    <a href=/back>Back</a>
+                </p>
+            </center>
+        </div>
+        <div id="greeting">
+            <h1>user profile</h1>
+            <h2>Welcome,{{user.name}}!</h2>
+            <p>Total number of comments: {{count}}</p>
+
+        </div>
+        <div id="box">
+            <table>
+                <tr>
+                    <th>Topic</th>
+                    <th>Comment</th>
+                    <th>created</th>
+                </tr>
+                 {% for comment in comments %}
+                <tr>
+                    <td>{{comment.topic}}</td>
+                    <td>{{comment.message}}</td>
+                    <td>{{comment.created_at|date:"M d Y"}}</td>
+                </tr>
+                 {% endfor %}
+            </table>
+        </div>
+    </div>
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+#wrapper {
+    margin: 0 auto;
+    text-align: center;
+    background-color: pink;
+    font-family: "Courier New";
+}
+
+#greeting {
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+#nav {
+    padding: 20px;
+    font-size: 20px;
+    background-color: pink;
+}
+
+#box {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    background-color: pink;
+    padding: 20px;
+    height: 400px;
+}
+
+#favorites {
+    order: 1;
+
+}
+
+#other {
+    order:2;
+    overflow: scroll;
+    flex-basis: 50%;
+    text-align: right;
+    padding: 10px;
+}
+
+#add {
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+button a {
+
+    background-color: lightcoral;
+    text-decoration-line: none;
+    font-family: "Courier New";
+    border-radius: 10px;
+
+}
+
+button {
+
+    background-color: lightcoral;
+    padding: 10px 15px;
+
+}
+
+#other h1 {
+    position: fixed;
+    background-color: white;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+

@@ -1,0 +1,317 @@
+/* Nav BAR */
+
+#nav {
+    margin: 0 auto; 
+    padding: 30px;
+    background-color: black;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-decoration-color: white;
+    text-decoration-style: none;
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-flow: row;
+    height: 100px;
+    justify-content: space-between;
+
+}
+
+#nav li{
+    background-color: black;
+}
+
+#nav a {
+
+    text-decoration-color: white;
+    list-style: none;
+    color: white;
+    padding: 20px;
+    background-color: black;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+}
+
+.dropdown-content {
+    order: 1;
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    background-color: black;
+    font-size: 30px;
+    min-width: 160px;
+    padding: 60px 60px;
+    border-radius: 10px;
+    text-decoration-style: none;
+    z-index: 1;
+    font-family: "Courier New";
+    line-height: 50px;
+
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#nav img {
+    order: 2;
+}
+
+#nav form {
+    order: 3;
+}
+
+
+h1 {
+    font-size: 65px;
+    color:  rgb(113, 63, 63);
+    opacity: .8;
+    letter-spacing: 6px;
+    padding: 30px 70px;
+    background-image: url("https://farm5.staticflickr.com/4451/38119141511_be8b4efabe.jpg");
+    font-weight: 100px;
+    font-family: "Courier New";
+
+}
+
+
+
+
+body { 
+    width: 100%;
+    background-image: linear-gradient(rgb(117, 19, 42), rgb(166, 77, 74), rgb(82, 21, 23));
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    color: white;
+}
+
+
+#wrapper {
+    margin: 0 auto;
+    font-family: "Courier New";
+    padding: 10px;
+    text-align: center;
+    background-image: url("https://farm5.staticflickr.com/4466/38019601422_42a28fbd32.jpg");
+    margin-top: -20px;
+    
+    
+    
+}
+
+#wrapper2 {
+
+    background-color: black;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -20px;
+
+}
+
+
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-flow: column;
+    padding: 10px;
+    width: 85%;
+    color: white;
+    
+    font-family: "Courier New";
+}
+
+
+#one {
+    order: 1;
+    padding: 80px 80px;
+    border-radius: 5px;
+    color: white;
+    margin: 0 auto;
+    width: 62%;
+}
+
+
+
+
+#bio {
+    width: 67%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    margin-top: -20px;
+    height: 700px;
+
+}
+
+
+#scroll {
+
+    overflow-y: scroll;
+    height: 500px;
+    
+}
+
+#scroll img {
+    padding: 30px;
+    
+}
+
+
+#two {
+    order: 2;
+    margin: 0 auto;
+    margin-top: 20px;
+  
+}
+
+
+ h2 {
+    font-size: 55px;
+    color: rgb(139, 24, 48);
+    text-shadow: 2px 2px black;
+    padding: 10px 30px;
+    border-bottom: 2px dashed rgb(139, 24, 48);
+    margin-top: -20px;
+}
+
+#top p {
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0 auto;
+    line-height: 20px;
+    font-family: "Courier New";
+    line-height: 25px;
+
+ 
+}
+ #boxwrapper {
+
+     display: flex;
+     justify-content: space-around;
+     margin-top: 10px;  
+     flex-flow: column;
+}
+
+ #box2 {
+    padding: 20px;
+    width: 58.7%;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: -25px;
+}
+
+
+
+.button {
+    background-image: linear-gradient(rgb(190, 61, 89), rgb(59, 12, 9), rgb(82, 21, 23));
+    color: white;
+    font-size: 15px;
+    font-family: "Courier New";
+    display: table;
+    margin-bottom: 20px;
+}
+
+
+#row3 h4 {
+    font-size: 18px;
+    vertical-align: top;
+    text-align: center;
+}
+
+#row3 h3 {
+    margin-bottom: 20px;
+
+}
+
+
+#content {
+    order: 3;
+    margin: 0 auto;
+}
+
+ #content {
+  
+    width: 50%;
+    padding: 5px 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Login and registration */
+#box {
+    margin: 0 auto;
+    background-color: lightcoral;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+}
+
+#signup {
+   width: 480px;
+    padding: 20px;
+    order:2
+}
+
+#login {
+ 
+    padding: 20px;
+    order: 1;
+}
+
+
+
+form input p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.form-row {
+    padding: 10px 0;
+    display:flex;
+}
+
+.form-row label {
+    padding-right: 10px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+
+
+button {
+
+    background-image: linear-gradient(rgb(117, 19, 42), rgb(166, 77, 74), rgb(82, 21, 23));
+    font-family: 'Courier New';
+    padding: 15px 15px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid black;
+   
+}
+
+.messages {
+    list-style-type: none;
+    color: rgb(166, 77, 74);
+    font-size: 26px;
+    font-weight: 600px;
+}
+
+
+/* end of login */

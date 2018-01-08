@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+     {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/aboutme.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/ok.js' %}"></script>
+</head>
+
+<body>
+    <div id="nav">
+         <div class="dropdown">
+            <button class="button"><img src="{% static 'images/menu.png'%}"></button>
+            <div class="dropdown-content">
+                <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+            </div>
+            <button class="button"><a href="/home1"><img src="{% static 'images/back.png'%}"></a></button>
+
+            
+        </div>
+  
+       
+        <img src="{% static 'images/farb.jpg' %}" width="300" height="120">
+     
+
+    </div>
+    <div id="wrapper">
+        <div id="hire">
+            <h2>About Me</h2>
+            
+            <img src="{% static 'images/me2.jpg' %}" width="300" height="300">
+            <p> My name is valerie I am a front end developer <br>and web designer.
+                 I have a design background and <br>years of working experience in digital marketing.<br>
+                I am also a digital artist and blogger.<br><br><br>View my <a href="/portfolio">Portfolio</a> to see more!</p>
+                <p><strong>Please press the contact button below for questions <br>
+                    and any buisness inquires.</strong></p>
+           
+            <div id="contact">
+                <button class="button" id="slideDown">Contact</button>
+                </center>
+                <div hidden id="para5">
+                    <h2>Contact Form</h2>
+                    <h5>Please fill out this contact form to work with <br>me or learn more about my services.</h5>
+                    
+                        <form action="#" method="post">
+                             {% csrf_token %}
+                            <div class="form-row">
+                                <label>First Name:</label>
+                                <input type="text" name="first_name">
+                            </div>
+                            <div class="form-row">
+                                <label>Last Name:</label>
+                                <input type="text" name="last_name">
+                            </div>
+                            <div class="form-row">
+                                <label>Email:</label>
+                                <input type="text" name="email">
+                            </div>
+                            <br> Services you're interested in:
+                            </br>
+                            <br> Services:<br>
+                            Developing:
+                            <input type="radio" name="services"> Digital Designs:
+                            <input type="radio" name="services">
+                            </br>
+                            <br> Comment:
+                            <input type="text" name="comment">
+                            </br>
+                            <br>
+                            <input type="submit" value="submit">
+                            </br>
+                        </form>
+
+                    </div>
+
+            </div>
+
+      
+          
+            
+            </h5>
+
+        </div>
+    </div>
+</body>
+
+</html>

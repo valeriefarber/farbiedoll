@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/ok.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/ok.js' %}"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="nav">
+             <ul>
+                 <li><a href="/logout">Logout</a></li>
+                 <li><a href="#">Profile</a></li>
+               
+                
+
+             </ul>
+        </div>
+        <div id="greeting">
+            {% for user in users %}
+            <h2>Welcome, <a href ="user_profile/{{user.id}}">{{user.name}}!</a></h2>
+            {% endfor %}
+            <p>Total number of comments: {{count}}</p>
+        </div>
+        <div id="intro">
+            <img src="{% static 'images/farb.jpg' %}" width="1000" height="400">
+            <h1>Welcome</h1>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iure beatae cupiditate accusantium! </p>
+            </div>
+            <img src="{% static 'images/sunset.jpg' %}" width="380" height="380">
+            <img src="{% static 'images/girls.jpg' %}" width="380" height="380">
+            <img src="{% static 'images/sea.jpg' %}" width="380" height="380">
+            
+            
+            
+        </div>
+
+        <div id="box">
+                <center><button class="button" id="slideDown">See recent activity</button></center>
+                <div hidden id="para5"> 
+                    <div id="favorites">
+                        <h1>Your favorites</h1>
+                        {% for your_comment in your_comments %}
+                        <h4>{{your_comment.topic}}: {{your_comment.message}}</h4>
+                        <p>
+                            <i>Posted by
+                                <a href="show/{{your_comment.created_by.name}}">{{your_comment.created_by.name}}</a>
+                            </i>
+                        </p>
+                        <br>
+                        <br>
+                        <button>
+                            <a href="remove_comment/{{your_comment.id}}">Remove from my list</a>
+                        </button>
+                        {% endfor %}
+                    </div>
+                    <div id="other">
+                        <!-- Other Quotes -->
+                        <h1>Other Comments </h1>
+                        {% for comment in comments %}
+                        <h4>{{comment.topic}} {{comment.message}}</h4>
+                        <i>Posted by
+                            <a href="show/{{comment.created_by.alias}}">{{comment.created_by.name}}</a>
+                        </i>
+                        <br>
+                        <br>
+                        <p>
+                            <button>
+                                <a href="like_comment/{{comment.id}}">Add to my list</a>
+                            </button>
+                        </p>
+                        <p>
+                            <button>
+                                <a href="delete_comment/{{comment.id}}">Remove</a>
+                            </button>
+                        </p>
+                        {% endfor %}
+                    </div>
+                    <div id="add">
+                        <h1>Add A Comment</h1>
+                        {% for message in messages %}
+                        <h2>{{ message }}</h2>
+                        {% endfor %} {% for user in users %}
+                        <form action="process_add" method="post">
+                            {% csrf_token %} Subject:
+                            <input type="text" name="topic">
+                            <p>
+                                <strong>Message: </strong>
+                            </p>
+                            <p>
+                                <textarea rows="10" cols="30" type="text" name="message"></textarea>
+                            </p>
+                    
+                            </textarea>
+                    
+                            <button type="submit" value="Submit">Submit</button>
+                        </form>
+                        {% endfor %}
+                    </div>
+                </div>
+        </div>
+
+        <!-- your favorites -->
+        
+        
+
+
+
+    </div>
+
+</body>
+
+</html>
